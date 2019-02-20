@@ -27,6 +27,7 @@ export function initializeIframAPI() {
 export function searchVideos(searchText) {
   var request = window["gapi"].client.youtube.search.list({
     q: searchText,
+    maxResults: 12,
     part: "snippet"
   });
 
