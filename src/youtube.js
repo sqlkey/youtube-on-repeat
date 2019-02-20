@@ -26,7 +26,7 @@ export function initializeIframAPI() {
 // Get the search results
 export function searchVideos(searchText) {
   var request = window["gapi"].client.youtube.search.list({
-    q: searchText,
+    q: searchText, 
     part: "snippet"
   });
 
